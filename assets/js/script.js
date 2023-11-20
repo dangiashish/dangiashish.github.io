@@ -40,3 +40,13 @@ for (let i = 0; i < themeBtn.length; i++) {
   })
 
 }
+
+const links = document.querySelectorAll('a');
+
+links.forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevents the default action of following the link
+    const url = this.getAttribute('href'); // Get the URL from the clicked link
+    openNewtab(url); // Open the URL in a new tab
+  });
+});
