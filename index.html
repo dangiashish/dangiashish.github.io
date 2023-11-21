@@ -32,6 +32,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script> $(function () { $("#header").load("../constants/header.html"); });</script>
+
 </head>
 
 <body class="dark-theme">
@@ -39,155 +44,7 @@
   <!--
     - #HEADER
   -->
-
-  <header>
-
-    <div class="container">
-
-      <nav class="navbar">
-
-        <a href="#" class="header-style">
-          <img src="./assets/images/weblogo.png" alt="Android Design's logo" width="50" class="logo-light"> <span
-            style="color: hsl(229, 76%, 66%)" class="logo-light">CodeByAshish</span>
-          <img src="./assets/images/weblogo.png" alt="Android Design's logo" width="50" class="logo-dark"> <span
-            style="color: hsl(214, 32%, 91%)" class="logo-dark">CodeByAshish</span>
-        </a>
-
-        <div class="btn-group">
-
-          <button class="theme-btn theme-btn-mobile light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-          <button class="nav-menu-btn">
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="flex-wrapper">
-
-          <ul class="desktop-nav">
-
-            <li>
-              <a href="./index.html" class="nav-link active">Home</a>
-            </li>
-
-            <li>
-              <a href="https://github.com/Dangiashish" target="_blank" class="nav-link">About Me</a>
-            </li>
-
-            <li>
-              <a href="./posts.html" target="_blank" class="nav-link">Contact</a>
-            </li>
-
-            <li>
-              <a href="https://github.com/Dangiashish" target="_blank" class="nav-link, header-style">
-                <img
-                  src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png"
-                  width="30" alt="Github" class="logo-dark" />
-                <img
-                  src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png"
-                  width="30" class="logo-light" />
-              </a>
-            </li>
-
-          </ul>
-
-          <button class="theme-btn theme-btn-desktop light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="mobile-nav">
-
-          <button class="nav-close-btn">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <div class="wrapper">
-
-            <p class="h3 nav-title">Main Menu</p>
-
-            <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">About Me</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-            </ul>
-
-          </div>
-
-          <!-- <div class="wrapper">
-
-            <p class="h3 nav-title">Topics</p>
-
-            <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Database</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Accessibility</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Web Performance</a>
-              </li>
-            </ul>
-
-          </div> -->
-
-          <div>
-
-            <p class="h3 nav-title">Social Media</p>
-
-            <ul>
-              <li class="nav-item">
-                <a href="https://linkedin.com/in/ashishkumardangi" target="_blank" class="nav-link">LinkedIn</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="https://facebook.com/beingashishdangi" target="_blank" class="nav-link">Facebook</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="https://twitter.com/ashishdangi369" target="_blank" class="nav-link">Twitter</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="https://youtube.com/CodeByAshish" target="_blank" class="nav-link">Youtube</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="https://github.com/dangiashish" target="_blank" class="nav-link">Github</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="https://instagram.com/coder.ashish" target="_blank" class="nav-link">Instagram</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-      </nav>
-
-    </div>
-
-  </header>
-
+<div id="header"></div>
 
 
 
@@ -293,6 +150,55 @@
 
             </div>
 
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://img.youtube.com/vi/zBlhdEtYRpI/sddefault.jpg" alt="Image SLider without ViewPager in Android Studio"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Android Project</button>
+
+                <h3>
+                  <a href="/birthday-wish-android-app.html" class="h3">
+                    Birthday Wishing Android App Design in Android Studio | Android Design Tutorials 
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  Hello, 
+                  In this video we will design a birthday wishing android app for friend, 
+                  family member or someone else. In this project we need some third party libraries, 
+                  so watch the video carefully till the end. For any query kindly join my Facebook Helpdesk Group to consult any problem.
+                  The source code is available on my GitHub page.
+                  If you like the content please subscribe Channel for more updates and share with your friends. 
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Ashish Dangi" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="/author.html" class="h4">Ashish Dangi</a>
+
+                    <p class="text-sm">
+                      <time datetime="2022-01-17">Feb 14, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
           <button class="btn load-more">Load More</button>
@@ -332,24 +238,24 @@
 
           </div> -->
 
-          <!-- <div class="tags">
+          <div class="tags">
 
             <h2 class="h2">Tags</h2>
 
             <div class="wrapper">
 
-              <button class="hashtag">#mongodb</button>
+              <button class="hashtag">android-library</button>
+              <button class="hashtag">#android</button>
+              <button class="hashtag">#java</button>
+              <button class="hashtag">#kotlin</button>
+              <button class="hashtag">#flutter</button>
+              <button class="hashtag">#dart</button>
               <button class="hashtag">#nodejs</button>
-              <button class="hashtag">#a11y</button>
-              <button class="hashtag">#mobility</button>
-              <button class="hashtag">#inclusion</button>
-              <button class="hashtag">#webperf</button>
-              <button class="hashtag">#optimize</button>
-              <button class="hashtag">#performance</button>
+              <button class="hashtag">#programming</button>
 
             </div>
 
-          </div> -->
+          </div>
 
           <div class="contact">
 
@@ -358,7 +264,7 @@
             <div class="wrapper">
 
               <p>
-                Do you want to learn more about how I can help your company overcome problems? Let us have a
+                Do you want to learn more about how I can help your overcome problems? Let us have a
                 conversation.
               </p>
 

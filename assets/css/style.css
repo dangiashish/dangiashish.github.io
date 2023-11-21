@@ -375,7 +375,7 @@ button .yt-btn-style{
 .hero {
   background-color: var(--background-primary);;
   padding-top:    2rem;
-  padding-bottom: var(--py);
+  padding-bottom: 2rem ;
   text-align: center;
 }
 
@@ -422,12 +422,32 @@ button .yt-btn-style{
   top: 20%;
   transform: translateY(-0%);
   width: 100%;
-  align-content: center;
   height: 150px;
-  background: url(../images/world_map_background.png);
-  background-size:contain;
-  opacity: 1;
+  overflow: hidden; 
 }
+
+/* Animate the background image */
+.hero .pattern-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; 
+  height: 100%;
+  background: url(../images/world_map_background.png);
+  background-size: contain;
+  animation: scrollBackground 10s linear infinite; 
+}
+
+@keyframes scrollBackground {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%); 
+  }
+}
+
 
 .hero .img-box {
   position: relative;
@@ -439,7 +459,7 @@ button .yt-btn-style{
   width:  40%;
   height: 40%;
   border-radius: 0 0 280px 230px;
-  transform: translate(85%,20%);
+  transform: translate(83%,22%);
 }
 
 .hero .shape {
@@ -448,7 +468,7 @@ button .yt-btn-style{
   left: 50%;
   border-radius: 50%;
   z-index: -1;
-  transform: translate(-37%,-15%) rotate(-20deg);
+  transform: translate(-40%,-15%) rotate(-20deg);
 }
 
 .hero .shape-1 {
@@ -461,13 +481,14 @@ button .yt-btn-style{
 
 .hero .shape-2 {
   /* display: none; */
-  width:  41%;
-  height: 95%;
-  box-shadow: inset 0 -20px 0 var(--action-primary);
+  width:  40%;
+  height: 90%;
+  box-shadow: inset 0 -10px 0 var(--action-primary);
   z-index: -1;
 }
 
 .hero .thumbnail {
+  margin-top:  20px;
   display: flex;
   align-items: center;
   max-width: 100%;
@@ -482,7 +503,8 @@ button .yt-btn-style{
 
 .main {
   background: var(--background-primary);
-  padding: var(--py) 0;
+  /* padding: var(--py) 0; */
+  padding:  10px;
 }
 
 /* Reset some default browser styles */
@@ -535,13 +557,15 @@ code {
   padding: 10px;
   margin-bottom: 1rem;
   border-radius: 10px;
-  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
+  /* box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05); */
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.2);
   transition: 0.25s ease;
 }
 
 .blog-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.2);
+
+  box-shadow: 2px 2px 10px  var(--foreground-tertiary);
 }
 
 .blog-card-banner { display: none; }
@@ -657,7 +681,7 @@ code {
       color:#000;
       }
 
-footer { background: var(--background-primary); }
+footer { background: var(--background-secondary); }
 
 footer .container {
   padding: var(--py) 15px;
@@ -1024,10 +1048,30 @@ footer .wrapper { text-align: center; }
     transform: translateY(-50%);
     width: 100%;
     height: 200px;
+    overflow: hidden; 
+}
+
+/* Animate the background image */
+.hero .pattern-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; 
+    height: 100%;
     background: url(../images/world_map_background.png);
     background-size: contain;
-    opacity: 1;
-  }
+    animation: scrollBackground 10s linear infinite; 
+}
+
+  @keyframes scrollBackground {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
 
   .hero .img-box {
     position: relative;
@@ -1058,7 +1102,7 @@ footer .wrapper { text-align: center; }
   }
 
   .hero .shape-2 {
-    width:  92%;
+    width:  90%;
     height: 92%;
     box-shadow: inset 0 -30px 0 var(--action-primary);
     z-index: 2;
@@ -1094,7 +1138,7 @@ footer .wrapper { text-align: center; }
   }
 
   .aside .wrapper {
-    background: var(--background-primary);
+    /* background: var(--card-primary); */
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
