@@ -134,7 +134,7 @@ html {
  * scrollbar style
  */
 
-::-webkit-scrollbar { width: 16px; }
+::-webkit-scrollbar { width: 15px; }
 
 
 ::-webkit-scrollbar-thumb {
@@ -369,11 +369,17 @@ button .yt-btn-style{
 \*-----------------------------------*/
 
 .hero {
-  /* background: var(--background-primary); */
   background-color: var(--background-primary);;
   padding-top:    2rem;
   padding-bottom: var(--py);
   text-align: center;
+}
+
+.hero .container {
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
 }
 
 .hero .h1 {
@@ -399,7 +405,71 @@ button .yt-btn-style{
   text-align: center;
 }
 
-.hero .right { display: none; }
+
+  .hero .right {
+    position: relative;
+    display:         block;
+    justify-content: center;
+    align-items:     center;
+  }
+
+.hero .pattern-bg {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-0%);
+  width: 100%;
+  align-content: center;
+  height: 150px;
+  background: url(../images/world_map_background.png);
+  background-size:contain;
+  opacity: 1;
+}
+
+.hero .img-box {
+  position: relative;
+  z-index: 0;
+  top: 100%;
+}
+
+.hero-img {
+  width:  40%;
+  height: 40%;
+  border-radius: 0 0 280px 230px;
+  transform: translate(85%,20%);
+}
+
+.hero .shape {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translate(-37%,-15%) rotate(-20deg);
+}
+
+.hero .shape-1 {
+  background: var(--accent);
+  width:  40%;
+  height: 90%;
+  z-index: -1;
+  /* display: none; */
+}
+
+.hero .shape-2 {
+  /* display: none; */
+  width:  41%;
+  height: 95%;
+  box-shadow: inset 0 -20px 0 var(--action-primary);
+  z-index: -1;
+}
+
+.hero .thumbnail {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  max-height: 50%;
+  border-radius: 10px;
+}
 
 
 /*-----------------------------------*\ 
@@ -989,7 +1059,6 @@ footer .wrapper { text-align: center; }
     box-shadow: inset 0 -30px 0 var(--action-primary);
     z-index: 2;
   }
-
 
 
   /**
