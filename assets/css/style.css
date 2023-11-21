@@ -37,6 +37,8 @@
 
   --code-text-color :  hsl(218, 23%, 23%);
 
+  --card-primary : hsl(0, 0%, 93%);
+
 }
 
 .dark-theme {
@@ -62,6 +64,8 @@
   --code-block-secondary:hsl(218, 17%, 19%);
 
   --code-text-color : hsl(0, 0%, 100%);
+
+  --card-primary : hsl(216, 19%, 38%);
 
 }
 
@@ -527,7 +531,7 @@ code {
 .blog-card-group { margin-bottom: 3rem; }
 
 .blog-card {
-  background: var(--background-primary);
+  background: var(--card-primary);
   padding: 10px;
   margin-bottom: 1rem;
   border-radius: 10px;
