@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    </html> <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+
+<body class="dark-theme">
+
+
+<main>
+    <div class="hero">
+        <!-- <div class="container"> -->
+            <div class="h3">
+Add repository in your `build.gradle` (project-level) file :</div>
+
+```gradle
+allprojects {
+      repositories {
+	...
+	maven { url 'https://jitpack.io' }
+	}
+}
+```
+<div class="h3"> OR </div>
+
+<div class="h3">in your `settings.gradle`</div>
+ 
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+<div class="h3"> Add dependency : </div>
+
+<div class="h3">Add dependency in your `build.gradle` (module-level) file : </div>
+
+```groovy
+dependencies {
+
+ implementation 'com.github.dangiashish:StyledCardView:1.0.0'
+
+}
+```
+
+<div class="h3"> Xml Attrs </div>
+
+```
+ <com.github.dangiashish.StyledCardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:background_Type="fill_stroke"
+        app:cornerRadius="10dp"
+        app:background_Color="@color/white"
+        app:shadow0_Outer_Alpha="0.3"
+        app:shadow0_Outer_Angle="-45"
+        app:shadow0_Outer_Blur="10dp"
+        app:shadow0_Outer_Color="@android:color/holo_green_light"
+        app:shadow0_Outer_Distance="10dp"
+        app:shadow1_Outer_Alpha="0.5"
+        app:shadow1_Outer_Angle="135"
+        app:shadow1_Outer_Blur="10dp"
+        app:shadow1_Outer_Color="@android:color/holo_blue_light"
+        app:shadow1_Outer_Distance="5dp"
+        app:shadow_Outer_Area="40dp"
+        app:stroke_ColorType="gradient_sweep"
+        app:stroke_Gradient_Angle="-45"
+        app:stroke_Gradient_Color0="@android:color/holo_blue_light"
+        app:stroke_Gradient_Color1="@android:color/holo_green_light"
+        app:stroke_Width="1dp" />
+```
+
+
+<div class="h3"> LICENSE</div>
+
+```groovy
+MIT License
+
+Copyright (c) 2023 Ashish Dangi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+</div>
+</main>
+        
+</body>
